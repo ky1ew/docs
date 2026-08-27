@@ -243,7 +243,7 @@ You must provide your public key to {% data variables.product.github %} to estab
 
    ```shell
    $ ssh-add -l
-   > 2048 a0:dd:42:3c:5a:9d:e4:2a:21:52:4e:78:07:6e:c8:4d /Users/USERNAME/.ssh/id_rsa (RSA)
+   > 2048  MD5:a0:dd:42:3c:5a:9d:e4:2a:21:52:4e:78:07:6e:c8:4d /Users/USERNAME/.ssh/id_rsa (RSA)
    ```
 
    If you're using OpenSSH 6.8 or newer:

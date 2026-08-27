@@ -141,6 +141,12 @@ You can also check that the key is being used by trying to connect to `git@{% da
 ssh -vT git@{% data variables.product.product_url %}
 ```
 
+If you use a private key with a non-default file name, use the `-i` option to specify the path to the key:
+
+```shell copy
+ssh -i ~/.ssh/KEY-FILE -vT git@{% data variables.product.product_url %}
+```
+
 You'll see output like this:
 
 ```shell
@@ -237,7 +243,7 @@ You must provide your public key to {% data variables.product.github %} to estab
 
    ```shell
    $ ssh-add -l
-   > 2048 a0:dd:42:3c:5a:9d:e4:2a:21:52:4e:78:07:6e:c8:4d /Users/USERNAME/.ssh/id_rsa (RSA)
+   > 2048  MD5:a0:dd:42:3c:5a:9d:e4:2a:21:52:4e:78:07:6e:c8:4d /Users/USERNAME/.ssh/id_rsa (RSA)
    ```
 
    If you're using OpenSSH 6.8 or newer:
